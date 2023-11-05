@@ -1,0 +1,40 @@
+Kotlin Meetup or Conference Report
+
+Objective: To encourage students to attend Kotlin-related events and stay connected with the Kotlin community.
+
+Task: In this assignment, students should attend a Kotlin meetup, conference, or webinar (either online or in person) and write a comprehensive report summarizing their experience. The report should include insights, key takeaways, and any new developments or trends discussed during the event.
+
+Instructions:
+
+Step 1: Event Selection (10 points)
+
+Instruct students to choose a Kotlin-related event to attend. They can explore Kotlin meetups, conferences, webinars, or any other relevant events in their region or online.
+Step 2: Event Participation (20 points)
+
+Students should actively participate in the chosen event by attending sessions, workshops, or discussions. They should take notes during the event to capture important information.
+Step 3: Report Writing (40 points)
+
+After attending the event, students should write a detailed report that includes the following elements:
+Event Details: Provide the name, date, and location (if applicable) of the event.
+Agenda and Sessions: Summarize the event's agenda, including the topics covered and the names of speakers or presenters.
+Key Takeaways: Highlight the key insights or lessons learned from the event. What valuable information did they gain?
+New Developments: Report on any new Kotlin-related tools, libraries, or trends discussed during the event.
+Personal Reflection: Share their personal thoughts and opinions on the event. Did it meet their expectations? What were the most memorable moments?
+Future Impact: Discuss how the knowledge gained from the event might benefit them in their Kotlin development journey.
+Step 4: Presentation (10 points)
+
+Students should be prepared to present their reports in class or during an online session. Encourage them to share their insights and engage in discussions with their peers.
+Step 5: Submission (20 points)
+
+Instruct students to submit their written reports and, if applicable, any presentation materials. Reports should be well-organized, free of grammatical errors, and provide a clear overview of their event experience.
+Grading Criteria:
+
+Selection of a relevant and suitable Kotlin-related event.
+
+Active participation in the event, evidenced by the content of the report.
+
+Comprehensive and well-structured report that covers event details, key takeaways, new developments, personal reflection, and future impact.
+
+Quality of the presentation, including the ability to effectively communicate insights and engage in discussions.
+
+Submission of reports and presentation materials according to the provided instructions.

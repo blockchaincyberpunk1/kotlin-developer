@@ -1,0 +1,41 @@
+Functions and Higher-Order Functions in Kotlin
+
+Objective: To reinforce the concept of functions and introduce higher-order functions.
+
+Task: Assign students a problem that requires them to create a Kotlin program that:
+
+Defines a function calculateSquare that takes an integer as input and returns its square.
+Defines a higher-order function applyOperation that takes two integers and a function as input and applies the function to the integers. Students should use this higher-order function to calculate squares, cubes, and other mathematical operations.
+Instructions:
+
+Step 1: Setup (5 points)
+
+Ensure students have Kotlin installed on their development environment.
+Step 2: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., FunctionsExample.kt) using their preferred code editor or IDE.
+Step 3: Write Kotlin Code (40 points)
+
+Students should write a Kotlin program that covers the following concepts:
+Define a function calculateSquare that takes an integer as input and returns its square.
+Define a higher-order function applyOperation that takes two integers and a function as input, applies the function to the integers, and returns the result.
+Use the applyOperation function to calculate squares, cubes, or other mathematical operations on integer values.
+Step 4: Compile and Run (5 points)
+
+Guide students on how to compile and run their Kotlin program from the command line or within their IDE.
+Step 5: Testing (10 points)
+
+Encourage students to test their program by applying different mathematical operations using the applyOperation function.
+Step 6: Documentation (10 points)
+
+Ask students to include comments in their code to explain how the calculateSquare function and the applyOperation higher-order function work.
+Step 7: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., FunctionsExample.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Correct implementation of the calculateSquare function.
+Accurate definition and usage of the applyOperation higher-order function.
+Successful compilation and execution of the Kotlin program.
+Testing of the program to ensure correctness.
+Inclusion of comments to explain code segments.

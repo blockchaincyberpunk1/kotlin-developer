@@ -1,0 +1,41 @@
+ Kotlin Community Forum Engagement
+
+Objective: To encourage students to actively participate in the Kotlin community forum.
+
+Task: In this assignment, students should join the official Kotlin community forum (e.g., Kotlinlang Forum) and actively engage in discussions. They can ask questions, answer queries from others, or share their knowledge and experiences related to Kotlin programming. Each student should make a minimum number of meaningful contributions over a specified period.
+
+Instructions:
+
+Step 1: Forum Registration (5 points)
+
+Instruct students to register on the official Kotlin community forum if they haven't already.
+Step 2: Introduction Post (10 points)
+
+Ask each student to create an introductory post in a dedicated forum section (e.g., "Introduce Yourself"). In this post, they should briefly introduce themselves, mention their interest in Kotlin, and share their goals for participating in the forum.
+Step 3: Active Participation (60 points)
+
+Students should actively engage in discussions on the forum over a specified period (e.g., one month). Encourage them to participate in various ways, such as:
+Asking questions related to Kotlin programming.
+Providing detailed and helpful answers to questions asked by others.
+Sharing code snippets, tutorials, or Kotlin-related resources.
+Discussing Kotlin best practices, tips, or tricks.
+Offering advice and insights based on their experiences with Kotlin.
+Step 4: Contribution Log (10 points)
+
+Ask students to maintain a log of their forum contributions. They should keep a record of the threads they started, the questions they asked, the answers they provided, and any valuable interactions they had during the assignment period.
+Step 5: Reflection (15 points)
+
+At the end of the assignment period, students should write a reflective summary of their experiences on the forum. They should include insights gained, challenges faced, and lessons learned from actively participating in the Kotlin community.
+Grading Criteria:
+
+Active and meaningful participation in forum discussions, including asking questions, providing helpful answers, and engaging in productive conversations.
+
+Quality and relevance of contributions made during the assignment period.
+
+Evidence of a genuine effort to connect with and learn from the Kotlin community.
+
+Effective communication and respect for community guidelines and etiquette.
+
+A well-organized contribution log that demonstrates the extent of their engagement.
+
+A reflective summary that provides valuable insights into their experiences and growth as Kotlin developers through forum engagement.

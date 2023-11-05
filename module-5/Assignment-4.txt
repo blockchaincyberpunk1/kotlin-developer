@@ -1,0 +1,57 @@
+Concurrent Data Processing with Coroutines
+
+Objective: To demonstrate concurrent data processing with coroutines.
+
+Task: In this assignment, students will create a Kotlin program that processes large datasets concurrently using coroutines. They will work with CSV files as an example, but you can adapt the dataset format as needed. The goal is to emphasize the benefits of concurrent data processing with coroutines. Follow these steps:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to create a new Kotlin project or file for this assignment.
+Step 2: Data Preparation (15 points)
+
+Provide students with multiple CSV files, each containing a substantial amount of data (e.g., sales data, customer records, etc.). These files should be in a format that students can easily read and process in their Kotlin program.
+Step 3: Coroutine Processing (30 points)
+
+Ask students to create a Kotlin program that performs the following tasks concurrently using coroutines:
+Read data from each CSV file concurrently.
+Process the data (e.g., calculate statistics, perform transformations) concurrently for each file.
+Combine the results from all files into a single output (e.g., a summary CSV file) concurrently.
+kotlin
+Copy code
+fun main() {
+    val files = listOf("file1.csv", "file2.csv", "file3.csv")
+    
+    runBlocking {
+        val results = mutableListOf<Deferred<DataProcessingResult>>()
+        
+        for (file in files) {
+            results += async {
+                processCsvFile(file)
+            }
+        }
+        
+        // Combine results from all files
+        val combinedResult = combineResults(results.awaitAll())
+        
+        // Write the combined result to an output file
+        writeOutputToFile(combinedResult, "output.csv")
+    }
+}
+Step 4: Testing and Performance (20 points)
+
+Students should thoroughly test their program using large datasets to ensure it processes data concurrently and correctly. They should measure and report on the program's performance gains achieved through concurrency.
+Step 5: Documentation (10 points)
+
+Encourage students to include comments and documentation explaining their concurrent data processing approach, any challenges faced, and how they measured performance improvements.
+Step 6: Submission (15 points)
+
+Students should submit their Kotlin code files, input CSV files, the resulting output file, and a brief report detailing their concurrent data processing strategy and performance measurements.
+Grading Criteria:
+
+Proper implementation of concurrent data processing using coroutines.
+
+Correct handling of CSV data, processing, and result aggregation.
+
+Thorough testing with large datasets and performance measurements.
+
+Clear comments and documentation explaining the concurrency approach.

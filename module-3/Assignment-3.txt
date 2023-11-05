@@ -1,0 +1,34 @@
+Null Safety and Smart Casts in Kotlin
+
+Objective: To practice handling null values and using smart casts in Kotlin.
+
+Task: In this assignment, students should create a Kotlin program that models a bank. They should define the following classes:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., BankSystem.kt) for this assignment.
+Step 2: Define Classes (20 points)
+
+Define a class called Account to represent a bank account. Include properties such as accountNumber (a unique identifier) and balance.
+Define a class called Customer to represent a bank customer. Include properties such as name and a reference to their account. The account reference should be nullable (Account?) since not all customers may have accounts.
+Step 3: Implement Null Safety (20 points)
+
+Ensure that the program uses null safety features in Kotlin to handle potential null values.
+Implement checks to ensure that when interacting with a customer's account, the code handles cases where the account reference is null. Prevent null pointer exceptions using appropriate null safety measures.
+Step 4: Testing (10 points)
+
+Encourage students to test their program thoroughly.
+Create instances of the Account and Customer classes, including scenarios where a customer has no associated account (i.e., the account reference is null).
+Demonstrate that the program gracefully handles null values and does not crash due to null pointer exceptions.
+Step 5: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of each class, property, and null safety measures implemented.
+Step 6: Submission (20 points)
+
+Students should submit their Kotlin code file (e.g., BankSystem.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Proper definition of the Account and Customer classes.
+Correct implementation of null safety measures to handle potential null values.
+Successful testing of the program with scenarios involving both customers with accounts and customers without accounts.
+Inclusion of comments to explain code segments.

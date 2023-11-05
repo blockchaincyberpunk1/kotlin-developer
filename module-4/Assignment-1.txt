@@ -1,0 +1,58 @@
+Working with Lists and Lambdas in Kotlin
+
+Objective: To practice using lists and lambdas in Kotlin.
+
+Task: In this assignment, students should write a Kotlin program that manages a list of student records. Each student record should contain properties like name, age, and grade. Students should:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., StudentRecords.kt) for this assignment.
+Step 2: Define Student Data Class (10 points)
+
+Define a data class called Student with properties such as name (String), age (Int), and grade (Double). This class represents a student record.
+kotlin
+Copy code
+data class Student(val name: String, val age: Int, val grade: Double)
+Step 3: Create a List of Student Records (15 points)
+
+Instruct students to create a list of student records. They can hard-code the data or prompt the user for input to populate the list.
+kotlin
+Copy code
+val studentRecords = listOf(
+    Student("Alice", 19, 92.5),
+    Student("Bob", 20, 88.0),
+    Student("Charlie", 18, 95.5),
+    // Add more student records here
+)
+Step 4: Use Lambdas for Filtering (20 points)
+
+Ask students to use lambdas to filter the list of student records based on specific criteria. For example:
+
+Filter students who are older than 18.
+
+Filter students whose grades are greater than or equal to 90.
+
+Step 5: Use Lambdas for Transformation (20 points)
+
+Instruct students to use lambdas to transform the list of student records into another list containing only student names.
+Step 6: Use Lambdas for Calculation (20 points)
+
+Encourage students to use lambdas to calculate the average grade of all students in the list.
+Step 7: Display Results (10 points)
+
+Students should display the filtered list, the list of student names, and the average grade.
+Step 8: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of each lambda expression and how they used lambdas for filtering, transformation, and calculation.
+Step 9: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., StudentRecords.kt) along with a brief description of how they used lists and lambdas to manage and process student records.
+Grading Criteria:
+
+Proper definition of the Student data class with the required properties.
+
+Successful use of lambdas for filtering, transformation, and calculation.
+
+Correct display of results.
+
+Inclusion of comments to explain code segments.

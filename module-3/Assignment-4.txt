@@ -1,0 +1,49 @@
+Using Sealed Classes in Kotlin
+
+Objective: To introduce sealed classes in Kotlin.
+
+Task: In this assignment, students should create a Kotlin program that models a basic chat application. They should define the following classes:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., ChatApp.kt) for this assignment.
+Step 2: Define Classes (20 points)
+
+Define a class called User to represent a chat application user. Include properties such as username and onlineStatus.
+
+Define a sealed class called Message to represent chat messages. This sealed class should have subclasses for different message types:
+
+TextMessage: Represents a text message with properties like sender, receiver, and text.
+
+ImageMessage: Represents an image message with properties like sender, receiver, and imageUrl.
+
+VoiceMessage: Represents a voice message with properties like sender, receiver, and audioUrl.
+
+Students should implement the necessary properties for each message type.
+
+Step 3: Using Sealed Classes (30 points)
+
+Demonstrate how to use sealed classes to handle different message types.
+
+Instruct students to create instances of various message types (e.g., TextMessage, ImageMessage) and demonstrate how to handle them in a way that leverages the sealed class's benefits.
+
+Step 4: Testing (10 points)
+
+Encourage students to test their program by creating users and sending messages of different types.
+Step 5: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of each class and how they used sealed classes to represent different message types.
+Step 6: Submission (25 points)
+
+Students should submit their Kotlin code file (e.g., ChatApp.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Proper definition of the User and sealed Message classes.
+
+Correct implementation of sealed subclasses for different message types (TextMessage, ImageMessage, VoiceMessage) with appropriate properties.
+
+Effective use of sealed classes to handle different message types in code.
+
+Successful testing of the program with scenarios involving different message types.
+
+Inclusion of comments to explain code segments.

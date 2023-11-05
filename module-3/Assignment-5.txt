@@ -1,0 +1,49 @@
+Designing an Inheritance Hierarchy in Kotlin
+
+Objective: To practice designing a complex inheritance hierarchy in Kotlin.
+
+Task: In this assignment, students should create a Kotlin program that models a zoo simulation. They will design a comprehensive inheritance hierarchy to represent various types of animals in the zoo. The hierarchy should demonstrate the use of inheritance, method overriding, and smart casts to handle specific behaviors of each animal type.
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., ZooSimulator.kt) for this assignment.
+Step 2: Define Classes (40 points)
+
+Define a base class called Animal with common properties that all animals share, such as name, species, and age. Include methods like eat() and makeSound() that are common to all animals.
+
+Create subclasses for specific animal categories, such as Mammal, Bird, and Fish. These subclasses should inherit from the Animal class.
+
+Each subclass should include properties and methods specific to that animal category. For example:
+
+Mammal subclass can have properties like furColor and methods like giveBirth().
+
+Bird subclass can have properties like wingSpan and methods like fly().
+
+Fish subclass can have properties like waterType and methods like swim().
+
+Step 3: Method Overriding (20 points)
+
+Instruct students to override the eat() and makeSound() methods in each animal subclass. The overridden methods should exhibit specific behaviors for each type of animal. For example, a mammal might eat differently from a bird.
+Step 4: Using Smart Casts (15 points)
+
+Demonstrate how to use smart casts in Kotlin to access subclass-specific properties and methods. For instance, when dealing with an instance of a Mammal, students should be able to access both common Animal properties/methods and Mammal-specific properties/methods without explicit type casting.
+Step 5: Testing (10 points)
+
+Encourage students to create instances of various animals (e.g., a lion, a parrot, a goldfish) and demonstrate how the inheritance hierarchy allows them to call methods and access properties specific to each animal category.
+Step 6: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of each class, method, and how they used inheritance and method overriding.
+Step 7: Submission (20 points)
+
+Students should submit their Kotlin code file (e.g., ZooSimulator.kt) along with a brief description of how they designed and tested the inheritance hierarchy for the zoo simulation.
+Grading Criteria:
+
+Proper definition of the Animal class and its subclasses (e.g., Mammal, Bird, Fish) with appropriate properties and methods.
+
+Successful implementation of method overriding in subclasses to exhibit specific behaviors.
+
+Effective use of smart casts to access subclass-specific properties and methods.
+
+Successful testing of the program with scenarios involving different animal types.
+
+Inclusion of comments to explain code segments.

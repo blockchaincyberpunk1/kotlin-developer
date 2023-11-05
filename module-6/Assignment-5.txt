@@ -1,0 +1,50 @@
+ Basic Android Game
+
+Objective: To explore interactive app development in Android.
+
+Task: In this assignment, students will create a simple Android game. The objective is to challenge students to design, develop, and deploy an interactive Android game. The game can be a quiz app, a memory game, or a simple puzzle. Students should handle user interactions and implement game logic. This assignment will introduce them to game development concepts on the Android platform.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to create a new Android project using Android Studio or another suitable development environment.
+Step 2: Game Concept (20 points)
+
+Ask students to conceptualize and design their game. They should decide on the game's rules, objectives, and overall gameplay.
+Step 3: UI Design (20 points)
+
+Students should design the user interface (UI) for their game. They will create XML layout files that include components like buttons, text views, images, or any other UI elements needed for the game.
+Step 4: Game Logic (30 points)
+
+Instruct students to implement the core game logic. Depending on the game type, they might need to:
+Create questions and answer choices (for a quiz game).
+Design and shuffle game cards (for a memory game).
+Implement game rules and scoring.
+Handle user interactions, such as selecting answers or tapping on game elements.
+Keep track of the game state and progress.
+Step 5: User Interactions (20 points)
+
+Students should handle user interactions effectively. This includes implementing touch events, button clicks, or any gestures required by the game.
+Step 6: Testing (20 points)
+
+Ensure that students thoroughly test their game to identify and fix any bugs or issues. The game should be functional and enjoyable to play.
+Step 7: Documentation (10 points)
+
+Encourage students to provide documentation explaining how to play the game, any unique features or challenges they encountered during development, and how they approached designing the game's UI and logic.
+Step 8: Submission (10 points)
+
+Students should submit their Android project, including XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful creation of a functional Android game.
+
+Correct setup of the XML layout files.
+
+Proper Kotlin code for game logic and user interactions.
+
+Effective handling of user interactions.
+
+Thorough testing of the game's functionality and identification of any bugs.
+
+Clear and concise documentation explaining how to play the game and any unique design or development aspects.

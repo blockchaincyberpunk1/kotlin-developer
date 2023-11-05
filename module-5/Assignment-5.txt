@@ -1,0 +1,66 @@
+Building an Asynchronous API Client with Coroutines
+
+Objective: To develop skills in building asynchronous API clients using coroutines.
+
+Task: In this assignment, students will create a Kotlin program that acts as an asynchronous client for a RESTful API of their choice. The assignment focuses on using coroutines to fetch and process data asynchronously, including features such as pagination, error handling, and asynchronous data retrieval. Follow these steps:
+
+Step 1: API Selection (10 points)
+
+Ask students to choose a public RESTful API of their interest (e.g., weather data, news articles, movie information) that provides a range of data and supports pagination.
+Step 2: Project Setup (10 points)
+
+Instruct students to create a new Kotlin project or file for this assignment.
+Step 3: Asynchronous API Client (30 points)
+
+Students should implement a Kotlin program that performs the following tasks asynchronously using coroutines:
+Fetch data from the selected API asynchronously.
+Handle pagination to retrieve all available data.
+Implement error handling to gracefully handle network issues and API errors.
+Process and display the fetched data asynchronously.
+kotlin
+Copy code
+suspend fun fetchDataFromApi(apiUrl: String): List<DataType> {
+    val results = mutableListOf<DataType>()
+    var page = 1
+    var morePages = true
+    
+    while (morePages) {
+        val response = fetchApiDataPage(apiUrl, page)
+        when (response) {
+            is ApiResponse.Success -> {
+                results.addAll(response.data)
+                page++
+                morePages = response.hasMorePages
+            }
+            is ApiResponse.Error -> {
+                // Handle the error (e.g., log, retry, or display a message)
+                morePages = false
+            }
+        }
+    }
+    
+    return results
+}
+Step 4: API Data Display (20 points)
+
+Instruct students to create a user-friendly interface to display the fetched data, providing options to navigate through paginated results.
+Step 5: Testing and Error Handling (15 points)
+
+Students should thoroughly test their asynchronous API client with various inputs and simulate network errors to verify that error handling is effective.
+Step 6: Documentation (15 points)
+
+Encourage students to include comments and documentation explaining their asynchronous API client's functionality, error-handling strategy, and usage.
+Step 7: Submission (10 points)
+
+Students should submit their Kotlin code files, a report detailing their selected API, the client's functionality, and any challenges faced during development.
+Grading Criteria:
+
+Proper implementation of the asynchronous API client using coroutines.
+
+Effective handling of pagination and error scenarios.
+
+User-friendly data display and navigation.
+
+Comprehensive testing and error handling.
+
+Clear comments and documentation explaining the client's functionality and usage.

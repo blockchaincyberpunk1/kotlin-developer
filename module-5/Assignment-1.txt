@@ -1,0 +1,78 @@
+Basic Coroutine Usage in Kotlin
+
+Objective: To introduce students to the basics of Kotlin coroutines.
+
+Task: In this assignment, students will create a Kotlin program that uses coroutines to perform asynchronous operations. They will build a simple weather app that fetches weather data for multiple cities concurrently using coroutines. Students should follow these steps:
+
+Step 1: Set Up the Project (5 points)
+
+Instruct students to create a new Kotlin project or file for this assignment.
+Step 2: Dependencies (5 points)
+
+Students should include the necessary dependencies in their Kotlin project, such as the Kotlin Coroutines library.
+kotlin
+Copy code
+dependencies {
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    // Add other dependencies as needed
+}
+Step 3: Fetching Weather Data (20 points)
+
+Provide students with a weather API (e.g., OpenWeatherMap) and explain how to obtain an API key.
+
+Instruct students to create a function that fetches weather data for a single city asynchronously using a coroutine.
+
+kotlin
+Copy code
+suspend fun fetchWeather(city: String, apiKey: String): WeatherData {
+    // Implement fetching weather data asynchronously
+}
+Step 4: Using Coroutines (20 points)
+
+Students should use coroutine scopes and the async and await functions to fetch weather data for multiple cities concurrently. They should create a list of cities and use coroutines to fetch data for each city.
+kotlin
+Copy code
+val cities = listOf("City1", "City2", "City3", /* ... */)
+val weatherDataList = cities.map { city ->
+    async { fetchWeather(city, apiKey) }
+}
+Step 5: Exception Handling (15 points)
+
+Students should handle exceptions gracefully. If an error occurs during data fetching, they should ensure that it doesn't affect the execution of other coroutines.
+kotlin
+Copy code
+try {
+    // Fetch weather data
+} catch (e: Exception) {
+    // Handle the exception
+}
+Step 6: Displaying Results (10 points)
+
+Instruct students to display the weather data for each city once it's fetched. They can print the data to the console or display it in a graphical user interface (GUI) if they are comfortable with GUI libraries.
+Step 7: Cancellation (15 points)
+
+Students should demonstrate how to cancel all ongoing coroutines when needed, such as when the user decides to stop fetching data.
+kotlin
+Copy code
+// Cancel all ongoing coroutines
+coroutineContext.cancelChildren()
+Step 8: Documentation (10 points)
+
+Encourage students to include comments in their code to explain each step of their coroutine-based weather app.
+Step 9: Testing (10 points)
+
+Students should thoroughly test their program by fetching weather data for different cities and checking that it works as expected.
+Step 10: Submission (10 points)
+
+Students should submit their Kotlin code files along with a brief description of how their coroutine-based weather app works, including any challenges they faced and how they handled exceptions and cancellation.
+Grading Criteria:
+
+Successful use of coroutines to fetch weather data concurrently.
+
+Proper exception handling to prevent the program from crashing due to errors.
+
+Display of weather data for each city.
+
+Correct implementation of coroutine cancellation.
+
+Inclusion of comments to explain code segments.

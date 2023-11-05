@@ -1,0 +1,50 @@
+Open-Source Contribution
+
+Objective: To introduce students to open-source development and contributions.
+
+Task: In this assignment, students should choose an open-source Kotlin project hosted on platforms like GitHub and make a meaningful contribution. This contribution could involve fixing a bug, adding a feature, improving documentation, or addressing an issue. Students should follow the project's contribution guidelines and actively collaborate with the project maintainers.
+
+Instructions:
+
+Step 1: Project Selection (10 points)
+
+Instruct students to explore open-source Kotlin projects on platforms like GitHub and choose one that aligns with their interests and skill level. Encourage them to select projects with active maintainers and clear contribution guidelines.
+Step 2: Contribution Plan (15 points)
+
+Students should thoroughly examine the project they've chosen and identify a specific area for improvement. This could be fixing a bug, adding a feature, enhancing documentation, or addressing an open issue.
+
+Ask students to create a detailed contribution plan that outlines the following:
+
+Description of the selected contribution.
+Expected impact on the project.
+The specific files or code they will modify.
+Any external resources or research required.
+A proposed timeline for completing the contribution.
+Step 3: Fork and Clone (10 points)
+
+Instruct students to fork the chosen open-source project's repository and clone it to their local development environment.
+Step 4: Contribution Implementation (40 points)
+
+Students should implement their planned contribution by making code changes, adding documentation, or addressing issues. They should follow the project's coding style and guidelines.
+Step 5: Collaboration (10 points)
+
+Encourage students to actively collaborate with the project's maintainers and community members. They should:
+Open a discussion or issue on the project repository to communicate their intent and approach.
+Seek feedback and guidance from maintainers.
+Be responsive to comments and suggestions from the project community.
+Step 6: Pull Request (15 points)
+
+Once the contribution is complete and tested, students should create a pull request (PR) to submit their changes to the project. The PR should include a clear description of the contribution, any related issue references, and a summary of the changes made.
+Grading Criteria:
+
+Selection of an appropriate open-source Kotlin project.
+
+A well-structured contribution plan that outlines the purpose, impact, scope, and timeline of the contribution.
+
+Implementation of the contribution following the project's coding style and guidelines.
+
+Active collaboration and communication with project maintainers and community members.
+
+The successful submission of a pull request that follows the project's contribution process.
+
+The significance of the contribution to the project (e.g., bug fix, feature enhancement, documentation improvement).

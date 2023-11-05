@@ -1,0 +1,38 @@
+Inheritance and Polymorphism in Kotlin
+
+Objective: To reinforce understanding of inheritance and polymorphism in Kotlin.
+
+Task: Building on Assignment 1 (Library System), assign students a problem that extends the library system. In this assignment, students should:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., LibrarySystemV2.kt) to build upon the previous assignment.
+Step 2: Implement Inheritance (15 points)
+
+Students should create a new class called EBook that inherits from the Book class.
+The EBook class should include additional properties specific to e-books, such as fileSize and format.
+Ensure that the EBook class correctly extends the Book class and includes its own properties.
+Step 3: Enhance the Library Class (20 points)
+
+In the Library class, add support for storing both physical books (from Assignment 1) and e-books (newly introduced).
+Implement a method in the Library class called displayAllBooks that displays details of all books in the library's collection, regardless of their type (physical book or e-book).
+Use polymorphism to iterate through the collection and display book details in a way that handles both physical books and e-books seamlessly.
+Step 4: Testing (10 points)
+
+Encourage students to test their program thoroughly.
+Add both physical books and e-books to the library's collection.
+Call the displayAllBooks method to ensure that it correctly displays details for all types of books.
+Step 5: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of the EBook class, the enhancements made to the Library class, and how to use the displayAllBooks method.
+Step 6: Submission (20 points)
+
+Students should submit their Kotlin code file (e.g., LibrarySystemV2.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Proper inheritance with the creation of the EBook class.
+Correct implementation of the EBook class with the specified additional properties.
+Successful enhancement of the Library class to support both physical books and e-books.
+Accurate implementation of the displayAllBooks method, demonstrating polymorphism.
+Thorough testing of the program, including adding and displaying both physical books and e-books.
+Inclusion of comments to explain code segments.

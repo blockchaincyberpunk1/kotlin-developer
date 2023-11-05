@@ -1,0 +1,48 @@
+Note-Taking App with Rich Text Editing
+
+Objective: To introduce students to text formatting and editing in Android apps.
+
+Task: In this assignment, students will create a note-taking app that allows users to create and edit notes with rich text formatting options such as bold, italic, bullet points, and headings. This assignment will involve implementing a rich text editor within the app and storing the formatted notes.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to create a new Android app project for the note-taking application. They can use Kotlin as the programming language.
+Step 2: Basic Note Creation (20 points)
+
+Students should start by implementing the basic note creation functionality. Users should be able to create a new note with a title and content.
+Step 3: Rich Text Editing (30 points)
+
+Implement a rich text editor within the app that allows users to format their notes. This should include options for bold text, italic text, bullet points (unordered list), numbered lists, and headings (e.g., H1, H2, H3).
+Step 4: Saving and Editing Notes (20 points)
+
+Users should be able to save their notes with rich text formatting. They should also be able to edit existing notes and preserve the formatting.
+Step 5: Note Listing (10 points)
+
+Create a screen that displays a list of all saved notes with their titles. Users should be able to select a note to view and edit its contents.
+Step 6: UI/UX Enhancements (20 points)
+
+Encourage students to improve the user interface (UI) and user experience (UX) of the app. Pay attention to the design and layout of the note editor and the note listing screen.
+Step 7: Testing and Bug Fixes (20 points)
+
+Ensure that students thoroughly test the app to identify and fix any bugs or issues. The rich text editor should work smoothly with all formatting options.
+Step 8: Documentation (10 points)
+
+Request documentation that explains how to use the note-taking app, including instructions for creating and formatting notes.
+Step 9: Submission (10 points)
+
+Students should submit the completed Android project, including updated XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful implementation of a rich text editor with formatting options for notes.
+
+Correct handling of note creation, editing, and saving with formatting.
+
+Functional note listing screen that displays saved notes.
+
+Improved user interface (UI) and user experience (UX) with attention to design and layout.
+
+Thorough testing of the app to ensure the proper functioning of the rich text editor and formatting options.
+
+Clear and concise documentation explaining how to use the note-taking app, including instructions for rich text formatting.

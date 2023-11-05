@@ -1,0 +1,110 @@
+Calculator App
+
+Objective: To build on the fundamentals of Android app development.
+
+Task: In this assignment, students will develop a simple calculator app. This project will reinforce their understanding of UI layout design, handling user input, performing calculations, and displaying results. Students will work with buttons, text views, and basic logic.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to set up a new Android project using Android Studio or another suitable development environment.
+Step 2: UI Design (20 points)
+
+Ask students to design the user interface (UI) for the calculator app. They should create an XML layout file that includes the following components:
+A TextView to display the input and result.
+Buttons for digits (0-9), operators (+, -, *, /), and other functions (e.g., clear, equals).
+Step 3: Kotlin Code (40 points)
+
+Students should write Kotlin code to implement the functionality of the calculator:
+Initialize the UI components from the layout file.
+Implement event handlers for button clicks to:
+Append digits to the input.
+Handle arithmetic operators and perform calculations.
+Clear the input and result.
+Update the TextView to display input and results.
+Sample Kotlin Code:
+
+kotlin
+Copy code
+// MainActivity.kt
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
+
+class MainActivity : AppCompatActivity() {
+
+    var input = ""
+    var result = ""
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Initialize UI components
+        val displayTextView = findViewById<TextView>(R.id.displayTextView)
+
+        // Set click listeners for buttons
+        button1.setOnClickListener { appendDigit(1) }
+        button2.setOnClickListener { appendDigit(2) }
+        // ... (repeat for other digits)
+
+        addButton.setOnClickListener { appendOperator("+") }
+        subtractButton.setOnClickListener { appendOperator("-") }
+        // ... (repeat for other operators)
+
+        equalsButton.setOnClickListener { calculateResult() }
+        clearButton.setOnClickListener { clearInput() }
+    }
+
+    private fun appendDigit(digit: Int) {
+        input += digit
+        updateDisplay()
+    }
+
+    private fun appendOperator(operator: String) {
+        input += operator
+        updateDisplay()
+    }
+
+    private fun calculateResult() {
+        try {
+            val expression = ExpressionBuilder(input).build()
+            result = expression.evaluate().toString()
+            updateDisplay()
+        } catch (e: Exception) {
+            result = "Error"
+            updateDisplay()
+        }
+    }
+
+    private fun clearInput() {
+        input = ""
+        result = ""
+        updateDisplay()
+    }
+
+    private fun updateDisplay() {
+        displayTextView.text = "$input\n$result"
+    }
+}
+Step 4: Testing (10 points)
+
+Instruct students to thoroughly test their calculator app by performing various calculations and verifying the results.
+Step 5: Documentation (10 points)
+
+Encourage students to provide documentation explaining how to use the calculator app, any additional features they implemented, and any challenges faced during development.
+Step 6: Submission (10 points)
+
+Students should submit their Android project, including XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful creation of a calculator app that can perform basic arithmetic operations.
+
+Correct setup of the XML layout file.
+
+Proper Kotlin code for handling user input and calculations.
+
+Successful testing of the app with various scenarios.
+
+Clear and concise documentation.

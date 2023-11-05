@@ -1,0 +1,78 @@
+Weather Forecast App
+
+Objective: To teach students about network communication in Android apps.
+
+Task: In this assignment, students will develop a weather forecast app that fetches real-time weather data from a weather API and displays it to the user. The assignment covers making network requests, handling JSON data, and presenting information in a user-friendly way.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to set up a new Android project using Android Studio or another suitable development environment.
+Step 2: UI Design (20 points)
+
+Ask students to design the user interface (UI) for the weather forecast app. They should create an XML layout file that includes components like:
+A text input field for users to enter a location (city or zip code).
+A button to trigger weather data retrieval.
+TextViews or other UI elements to display weather information (e.g., temperature, conditions, wind speed).
+Step 3: Network Requests (30 points)
+
+Students should implement network communication to fetch weather data from a weather API. They can use libraries like Retrofit or the built-in HttpURLConnection to make API requests.
+Sample Retrofit Implementation (for network requests):
+
+kotlin
+Copy code
+// Define a data class for weather data
+data class WeatherData(
+    val temperature: Double,
+    val conditions: String,
+    val windSpeed: Double
+)
+
+// Define a Retrofit service interface
+interface WeatherService {
+    @GET("weather") // Specify the API endpoint for weather data
+    suspend fun getWeatherData(
+        @Query("location") location: String
+    ): Response<WeatherData>
+}
+
+// Create a Retrofit instance
+val retrofit = Retrofit.Builder()
+    .baseUrl("https://api.weather.com/") // Replace with the actual API base URL
+    .addConverterFactory(GsonConverterFactory.create())
+    .build()
+
+// Use the Retrofit instance to create a WeatherService
+val weatherService = retrofit.create(WeatherService::class.java)
+Step 4: Data Parsing (20 points)
+
+Instruct students to parse the JSON data received from the weather API and extract relevant information.
+Step 5: Displaying Weather Information (20 points)
+
+Students should update the UI to display weather information, including temperature, conditions, and wind speed, based on the data retrieved from the API.
+Step 6: Error Handling (10 points)
+
+Ensure that students implement error handling for network requests and display appropriate error messages to the user in case of network issues or API errors.
+Step 7: Testing (10 points)
+
+Instruct students to thoroughly test their weather forecast app by entering different locations and checking if weather data is fetched and displayed correctly.
+Step 8: Documentation (10 points)
+
+Encourage students to provide documentation explaining how to use the app, the API used, and any additional features they implemented. They should also document any challenges faced during development.
+Step 9: Submission (10 points)
+
+Students should submit their Android project, including XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful creation of a weather forecast app that fetches real-time weather data from a weather API.
+
+Correct setup of the XML layout file.
+
+Proper Kotlin code for making network requests, parsing JSON data, and displaying weather information.
+
+Effective error handling for network issues and API errors.
+
+Successful testing of the app's functionality.
+
+Clear and concise documentation.

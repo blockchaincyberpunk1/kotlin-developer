@@ -1,0 +1,43 @@
+ Maps and Data Transformation in Kotlin
+
+Objective: To practice working with Kotlin maps and data transformation.
+
+Task: In this assignment, students will write a Kotlin program that reads data from a CSV file containing information about countries and their populations. They will perform the following tasks:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., CountryPopulation.kt) for this assignment.
+Step 2: Read CSV Data (10 points)
+
+Provide students with a CSV file containing country names and populations. Instruct them to read this data into a map, where the country name is the key, and the population is the value.
+kotlin
+Copy code
+val countryPopulations = mapOf(
+    /* Read data from the CSV file and populate the map */
+)
+Step 3: Filter by Population Threshold (15 points)
+
+Ask students to use lambdas and map functions to filter out countries with populations below a certain threshold (e.g., 10 million).
+Step 4: Transform to List of Strings (20 points)
+
+Encourage students to use map functions to transform the map into a list of strings. Each string should contain the country name and population.
+Step 5: Display Results (10 points)
+
+Students should display the list of strings, showing the country name and population for countries above the population threshold.
+Step 6: Documentation (10 points)
+
+Instruct students to include comments in their code to explain the purpose of each step and how they used maps and lambdas to achieve the desired results.
+Step 7: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., CountryPopulation.kt) along with the input CSV file and a brief description of how they processed the data and transformed it into the desired format.
+Grading Criteria:
+
+Proper reading of data from the CSV file.
+
+Correct population filtering using lambdas and map functions.
+
+Accurate transformation of the map into a list of strings.
+
+Correct display of results.
+
+Inclusion of comments to explain code segments.

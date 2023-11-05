@@ -1,0 +1,45 @@
+Working with Collections in Kotlin
+
+Objective: To introduce students to Kotlin's collection operations.
+
+Task: Students should write a Kotlin program that:
+
+Creates a list of integers.
+Uses the filter function to filter out even numbers from the list.
+Uses the map function to square each number in the filtered list.
+Uses the reduce function to find the sum of the squared values.
+Instructions:
+
+Step 1: Setup (5 points)
+
+Ensure students have Kotlin installed on their development environment.
+Step 2: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., CollectionsExample.kt) using their preferred code editor or IDE.
+Step 3: Write Kotlin Code (40 points)
+
+Students should write a Kotlin program that accomplishes the following:
+Create a list of integers (e.g., [1, 2, 3, 4, 5, 6, 7, 8, 9]).
+Use the filter function to filter out even numbers from the list.
+Use the map function to square each number in the filtered list.
+Use the reduce function to find the sum of the squared values.
+Step 4: Compile and Run (5 points)
+
+Guide students on how to compile and run their Kotlin program from the command line or within their IDE.
+Step 5: Testing (10 points)
+
+Encourage students to test their program with different input lists to ensure correctness.
+Step 6: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of each operation and how they work.
+Step 7: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., CollectionsExample.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Correct creation of the list of integers.
+Accurate usage of the filter function to filter even numbers.
+Proper application of the map function to square the numbers.
+Successful use of the reduce function to find the sum of squared values.
+Testing of the program with different input lists.
+Inclusion of comments to explain code segments.

@@ -1,0 +1,67 @@
+Sequences and Stream Processing in Kotlin
+
+Objective: To introduce Kotlin sequences and stream processing.
+
+Task: In this assignment, students will work with a large dataset of customer orders and use Kotlin sequences to perform efficient stream processing. They will complete the following tasks:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., OrderProcessing.kt) for this assignment.
+Step 2: Read and Parse the Dataset (10 points)
+
+Provide students with a dataset in CSV or JSON format, containing customer orders. Ask them to read and parse the dataset into a list of order objects.
+kotlin
+Copy code
+data class Order(val orderId: Int, val customerId: Int, val totalAmount: Double, val products: List<Product>)
+data class Product(val productId: Int, val quantity: Int)
+val orders: List<Order> = /* Read and parse the dataset */
+Step 3: Filter Orders (15 points)
+
+Instruct students to use Kotlin sequences to filter orders based on specific criteria. For example, they can filter orders with a total amount greater than $100.
+kotlin
+Copy code
+val highValueOrders = orders.asSequence()
+    .filter { it.totalAmount > 100.0 }
+    .toList()
+Step 4: Calculate Total Revenue (20 points)
+
+Students should use Kotlin sequences to calculate the total revenue from the filtered orders.
+kotlin
+Copy code
+val totalRevenue = highValueOrders.asSequence()
+    .map { it.totalAmount }
+    .sum()
+Step 5: Find Top Products (20 points)
+
+Encourage students to use Kotlin sequences to find the top 10 products ordered by quantity. They should consider the quantity of each product across all orders.
+kotlin
+Copy code
+val topProducts = orders.asSequence()
+    .flatMap { it.products.asSequence() }
+    .groupBy { it.productId }
+    .mapValues { entry -> entry.value.sumBy { it.quantity } }
+    .toList()
+    .sortedByDescending { it.second }
+    .take(10)
+Step 6: Display Results (10 points)
+
+Students should display the total revenue and the list of top 10 products ordered by quantity.
+Step 7: Documentation (10 points)
+
+Instruct students to include comments in their code to explain each step of the sequence processing and how they achieved the desired results.
+Step 8: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., OrderProcessing.kt) along with the input dataset and a brief description of how they processed the data and obtained the results.
+Grading Criteria:
+
+Correct reading and parsing of the dataset.
+
+Accurate filtering of orders based on criteria.
+
+Correct calculation of total revenue.
+
+Proper identification of the top 10 products by quantity.
+
+Display of results.
+
+Inclusion of comments to explain code segments.

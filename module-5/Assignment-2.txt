@@ -1,0 +1,88 @@
+Asynchronous File I/O with Coroutines in Kotlin
+
+Objective: To practice using coroutines for asynchronous file I/O.
+
+Task: In this assignment, students will create a Kotlin program that reads data from multiple files asynchronously and processes it. They will build a log file analyzer that reads log entries from multiple log files concurrently using coroutines. The program should generate statistics like the total number of log entries, error counts, and more. Here are the steps:
+
+Step 1: Set Up the Project (5 points)
+
+Instruct students to create a new Kotlin project or file for this assignment.
+Step 2: Dependencies (5 points)
+
+Students should include the necessary dependencies in their Kotlin project, such as the Kotlin Coroutines library.
+kotlin
+Copy code
+dependencies {
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
+    // Add other dependencies as needed
+}
+Step 3: Log File Reader (15 points)
+
+Provide students with a directory containing multiple log files (e.g., .log files).
+
+Instruct students to create a coroutine function that reads log entries from a single log file asynchronously. They should use File.readText() or other file-reading functions available in Kotlin.
+
+kotlin
+Copy code
+suspend fun readLogFile(fileName: String): List<String> {
+    // Implement reading log entries asynchronously
+}
+Step 4: Concurrent Processing (20 points)
+
+Students should use coroutine scopes and the async function to read log entries from multiple log files concurrently. They should create a list of log file names and use coroutines to read data for each file.
+kotlin
+Copy code
+val logFiles = listOf("file1.log", "file2.log", "file3.log", /* ... */)
+val logEntriesList = logFiles.map { fileName ->
+    async { readLogFile(fileName) }
+}
+Step 5: Log Analysis (20 points)
+
+Instruct students to process the log entries concurrently to generate statistics. They should count the total number of log entries, identify errors, calculate error counts, and any other relevant statistics.
+kotlin
+Copy code
+val totalLogEntries = logEntriesList.sumBy { it.await().size }
+val errorCount = logEntriesList.sumBy { countErrors(it.await()) }
+// Implement other statistics as needed
+Step 6: Exception Handling (15 points)
+
+Students should handle exceptions gracefully, especially when reading files that may not exist or when encountering errors in log files.
+kotlin
+Copy code
+try {
+    // Read log entries
+} catch (e: Exception) {
+    // Handle the exception
+}
+Step 7: Displaying Results (10 points)
+
+Instruct students to display the log analysis results, including total log entries, error counts, and any other relevant statistics. They can print the results to the console or display them in a GUI if they are comfortable with GUI libraries.
+Step 8: Cancellation (10 points)
+
+Students should demonstrate how to cancel all ongoing coroutines when needed, such as when the user decides to stop processing log files.
+kotlin
+Copy code
+// Cancel all ongoing coroutines
+coroutineContext.cancelChildren()
+Step 9: Documentation (10 points)
+
+Encourage students to include comments in their code to explain each step of their log file analyzer.
+Step 10: Testing (10 points)
+
+Students should thoroughly test their program by analyzing different sets of log files and checking that it generates accurate statistics.
+Step 11: Submission (10 points)
+
+Students should submit their Kotlin code files along with a brief description of how their log file analyzer works, including any challenges they faced and how they handled exceptions and cancellation.
+Grading Criteria:
+
+Successful use of coroutines to read log entries from multiple files concurrently.
+
+Proper exception handling to prevent the program from crashing due to file-related errors.
+
+Accurate generation of log analysis statistics.
+
+Display of log analysis results.
+
+Correct implementation of coroutine cancellation.
+
+Inclusion of comments to explain code segments.

@@ -1,0 +1,85 @@
+ To-Do List App
+
+Objective: To introduce students to data persistence in Android apps.
+
+Task: In this assignment, students will develop a to-do list app that allows users to add, edit, and delete tasks. The primary objective is to implement data persistence, which can be achieved through a local database or file storage. This assignment will familiarize students with Android's data storage options.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to set up a new Android project using Android Studio or another suitable development environment.
+Step 2: UI Design (20 points)
+
+Ask students to design the user interface (UI) for the to-do list app. They should create an XML layout file that includes components like:
+A RecyclerView to display tasks.
+An input field for adding new tasks.
+Buttons for adding, editing, and deleting tasks.
+Step 3: Task Data Model (20 points)
+
+Students should define a data model for tasks, including properties like task name, description, and status (e.g., completed or pending).
+Step 4: Data Storage (40 points)
+
+Instruct students to implement data persistence for the to-do list. They have two options:
+Local Database: Implement a local SQLite database to store and manage tasks. Students should use Room, Android's persistence library, to work with the database.
+File Storage: Implement data storage using file I/O. Students can save tasks in a text or JSON file.
+Sample Room Database Implementation (for local database):
+
+kotlin
+Copy code
+// Define the Task entity
+@Entity(tableName = "tasks")
+data class Task(
+    @PrimaryKey(autoGenerate = true) val id: Int,
+    val name: String,
+    val description: String,
+    val isCompleted: Boolean
+)
+
+// Define the TaskDao interface
+@Dao
+interface TaskDao {
+    @Query("SELECT * FROM tasks")
+    suspend fun getAllTasks(): List<Task>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertTask(task: Task)
+
+    @Update
+    suspend fun updateTask(task: Task)
+
+    @Delete
+    suspend fun deleteTask(task: Task)
+}
+
+// Create the AppDatabase class
+@Database(entities = [Task::class], version = 1)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun taskDao(): TaskDao
+}
+Step 5: UI Interactions (20 points)
+
+Students should write Kotlin code to interact with the UI and handle task-related operations:
+Implement the RecyclerView to display tasks.
+Handle user interactions for adding, editing, and deleting tasks.
+Ensure that tasks are displayed dynamically as the user interacts with the app.
+Step 6: Testing (10 points)
+
+Instruct students to thoroughly test their to-do list app by adding, editing, and deleting tasks. They should also test how tasks persist between app sessions.
+Step 7: Documentation (10 points)
+
+Encourage students to provide documentation explaining how to use the to-do list app, any additional features they implemented, and any challenges faced during development.
+Step 8: Submission (10 points)
+
+Students should submit their Android project, including XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful creation of a to-do list app with data persistence (either local database or file storage).
+
+Correct setup of the XML layout file.
+
+Proper Kotlin code for handling user interactions and data storage.
+
+Successful testing of the app's functionality.
+
+Clear and concise documentation.

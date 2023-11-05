@@ -1,0 +1,37 @@
+Kotlin Language Updates Research
+
+Objective: To keep students updated with the latest Kotlin language features and updates.
+
+Task: In this assignment, students should research and prepare a detailed report on the most recent Kotlin language updates and features introduced in the latest release. They should explain how these updates can be beneficial for Kotlin developers and provide examples of their usage.
+
+Instructions:
+
+Step 1: Topic Selection (10 points)
+
+Instruct students to select the latest Kotlin release (e.g., Kotlin 1.x) as the focus of their research. They should identify the major features and updates introduced in that release.
+Step 2: Research and Content Creation (40 points)
+
+Students should conduct thorough research on the selected Kotlin release and its new features. They should consider the following points in their report:
+Introduction: Provide an overview of the Kotlin release, including the version number and its release date.
+Major Features: Describe the significant features and updates introduced in the release. Explain how these features enhance Kotlin's capabilities and the problems they address.
+Benefits: Discuss the benefits of these features for Kotlin developers, including improved code readability, performance enhancements, and ease of use.
+Examples: Provide practical code examples to demonstrate the usage of the new features. Include both simple and more complex code snippets.
+Compatibility: Explain any compatibility considerations or migration steps for existing Kotlin projects.
+References: Include proper citations and references to official Kotlin documentation or other reliable sources used for research.
+Step 3: Presentation (20 points)
+
+Students should be prepared to present their research findings in class or during an online session. Encourage them to share code examples and engage in discussions with their peers.
+Step 4: Submission (30 points)
+
+Instruct students to submit their written reports, presentation materials, and any code examples they used. Reports should be well-structured, clear, and free of grammatical errors.
+Grading Criteria:
+
+Selection of an appropriate Kotlin release version for research.
+
+Comprehensive research and explanation of the major features and updates introduced in the selected release.
+
+Clear demonstration of how the new features can benefit Kotlin developers, supported by practical examples.
+
+Quality of the presentation, including the ability to effectively communicate research findings and engage in discussions.
+
+Submission of reports and presentation materials according to the provided instructions.

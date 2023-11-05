@@ -1,0 +1,36 @@
+Looping with Kotlin
+
+Objective: To introduce students to loops in Kotlin.
+
+Task: Ask students to write a program that uses a loop (for or while) to print the numbers from 1 to 10. They should practice both types of loops to understand how they work in Kotlin.
+
+Instructions:
+
+Step 1: Setup (5 points)
+
+Ensure students have Kotlin installed on their development environment.
+Step 2: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., Looping.kt) using their preferred code editor or IDE.
+Step 3: Write Kotlin Code (30 points)
+
+Students should write a Kotlin program that does the following:
+Uses a for loop to print the numbers from 1 to 10.
+Uses a while loop to achieve the same result.
+Demonstrates their understanding of loop syntax, including initialization, condition, and increment (for loops) or update (while loops).
+Step 4: Compile and Run (5 points)
+
+Guide students on how to compile and run their Kotlin program from the command line or within their IDE.
+Step 5: Test and Compare (10 points)
+
+Encourage students to test their program and compare the results from both for and while loops to ensure correctness.
+Step 6: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., Looping.kt) along with a brief explanation of how they implemented and tested both for and while loops.
+Grading Criteria:
+
+Correct implementation of both for and while loops.
+Properly printed numbers from 1 to 10 using each type of loop.
+Successful compilation and execution of the Kotlin program.
+Testing to compare the results of both loop types.
+Submission of the Kotlin code file and a description of the implementation and testing process.

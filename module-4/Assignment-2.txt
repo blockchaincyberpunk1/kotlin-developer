@@ -1,0 +1,45 @@
+ Sets and Distinct Values in Kotlin
+
+Objective: To explore Kotlin sets and distinct values.
+
+Task: In this assignment, students will work with sets of data. Specifically, they will create a Kotlin program that reads a list of product IDs from a file and performs the following tasks:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., ProductSets.kt) for this assignment.
+Step 2: Read Product IDs (10 points)
+
+Provide students with two text files containing product IDs, one for List A and one for List B. Instruct them to read these product IDs into separate sets.
+kotlin
+Copy code
+val listA = setOf( /* Read product IDs from file for List A */ )
+val listB = setOf( /* Read product IDs from file for List B */ )
+Step 3: Remove Duplicates (15 points)
+
+Ask students to use sets to remove duplicates from each list.
+Step 4: Find Common Products (20 points)
+
+Instruct students to use sets and lambdas to find the common products between List A and List B.
+Step 5: Find Unique Products (20 points)
+
+Encourage students to use sets and lambdas to find products that are unique to each list. This includes products that are present in List A but not in List B and vice versa.
+Step 6: Display Results (10 points)
+
+Students should display the distinct values in List A, List B, the common products, and the unique products for each list.
+Step 7: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of each step and how they used sets and lambdas to achieve the desired results.
+Step 8: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., ProductSets.kt) along with the input text files and a brief description of how they processed the product IDs using sets and lambdas.
+Grading Criteria:
+
+Proper reading of product IDs from input files.
+
+Successful removal of duplicates using sets.
+
+Correct identification of common and unique products.
+
+Accurate display of results.
+
+Inclusion of comments to explain code segments.

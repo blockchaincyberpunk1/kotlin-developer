@@ -1,0 +1,58 @@
+Location-Based Reminder App
+
+Objective: To teach students about location-based services in Android.
+
+Task: In this assignment, students will build an app that allows users to set reminders based on their current location. For example, a user can set a reminder to buy groceries when they are near a supermarket. This assignment will cover location tracking, geofencing, and background services.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to create a new Android app project for the location-based reminder application. They should use Kotlin as the programming language.
+Step 2: User Registration and Login (20 points)
+
+Implement user registration and login functionality. Users should be able to create an account and log in.
+Step 3: Adding Locations (20 points)
+
+Enable users to add specific locations (e.g., supermarkets, pharmacies) to the app. These locations will serve as reminders' triggers.
+Step 4: Setting Reminders (30 points)
+
+Users should be able to set reminders associated with specific locations. When they are near a defined location, the app should trigger the reminder.
+Step 5: Location Tracking and Geofencing (40 points)
+
+Implement location tracking to determine the user's current location. Integrate geofencing to monitor when the user enters or exits a predefined geographical area (e.g., a supermarket's vicinity).
+Step 6: Background Services (20 points)
+
+Ensure that the app can operate efficiently in the background to monitor location changes and trigger reminders.
+Step 7: Reminder Notifications (20 points)
+
+When a user enters a predefined geographical area (geofence), the app should send a reminder notification. Implement this feature.
+Step 8: UI/UX Enhancements (20 points)
+
+Encourage students to improve the user interface (UI) and user experience (UX) of the app. Pay attention to the design and layout of the location setting and reminder creation screens.
+Step 9: Testing and Bug Fixes (20 points)
+
+Thoroughly test the app, especially the location tracking, geofencing, and background service features. Address any bugs or issues that arise.
+Step 10: Documentation (10 points)
+
+Provide documentation that explains how to use the location-based reminder app, including instructions for setting reminders and managing locations.
+Step 11: Submission (10 points)
+
+Students should submit the completed Android project, including updated XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful implementation of user registration and login functionality.
+
+Functional location management: users can add and edit locations.
+
+Proper creation and management of reminders associated with locations.
+
+Accurate location tracking, geofencing, and background service operation.
+
+Reliable reminder notifications triggered by geofences.
+
+Improved user interface (UI) and user experience (UX) with attention to design and layout.
+
+Thorough testing of location-based features to ensure proper functionality.
+
+Clear and concise documentation explaining how to use the location-based reminder app, including instructions for setting reminders and managing locations.

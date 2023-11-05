@@ -1,0 +1,61 @@
+Creating a Type-Safe HTML DSL in Kotlin
+
+Objective: To explore type-safe builders and domain-specific languages (DSLs) in Kotlin.
+
+Task: In this assignment, students will design and implement a DSL for creating HTML markup in Kotlin. They will build a library that allows users to create HTML elements, set attributes, and nest elements using a type-safe builder syntax. The DSL should be expressive and easy to use. Follow these steps:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to create a new Kotlin project or file for this assignment.
+Step 2: HTML Element DSL (20 points)
+
+Define a set of classes that represent HTML elements like Html, Head, Body, Div, P, A, etc. Each class should support the following:
+Setting attributes (e.g., id, class, href, src, etc.) using a builder-style syntax.
+Nesting child elements using the builder pattern.
+kotlin
+Copy code
+fun main() {
+    val html = html {
+        head {
+            title("Type-Safe HTML DSL")
+        }
+        body {
+            div {
+                p("Hello, world!")
+                a(href = "https://example.com") {
+                    +"Visit Example"
+                }
+            }
+        }
+    }
+    println(html)
+}
+Step 3: Type-Safe Builder Functions (20 points)
+
+Create type-safe builder functions for each HTML element. These builder functions should allow users to set attributes and nest child elements. Ensure that the DSL enforces type safety, preventing users from adding unsupported attributes or nesting elements incorrectly.
+Step 4: Render HTML (15 points)
+
+Implement a function that takes the DSL structure and renders it as a well-formed HTML string. Ensure that the generated HTML follows proper indentation and formatting.
+Step 5: Example Usage (15 points)
+
+Provide examples of how to use the DSL to create HTML content, such as a simple webpage or a portion of a webpage.
+Step 6: Documentation (10 points)
+
+Encourage students to include comments and documentation explaining the usage of their DSL, including the available HTML elements and attributes.
+Step 7: Testing (10 points)
+
+Students should thoroughly test their DSL by creating various HTML structures and ensuring that the generated HTML is correct.
+Step 8: Submission (10 points)
+
+Students should submit their Kotlin code files along with a brief description of how their HTML DSL works, any design decisions they made, and examples of how to use it.
+Grading Criteria:
+
+Proper implementation of HTML element classes with support for attributes and child elements.
+
+Correct definition and use of type-safe builder functions.
+
+Accurate rendering of HTML output from the DSL.
+
+Clear examples demonstrating the DSL's usage.
+
+Inclusion of comments and documentation.

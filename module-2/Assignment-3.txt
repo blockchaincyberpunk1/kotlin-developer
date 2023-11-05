@@ -1,0 +1,40 @@
+Loops and Iteration in Kotlin
+
+Objective: To teach students about loops in Kotlin.
+
+Task: Instruct students to write a Kotlin program that:
+
+Uses a for loop to print all even numbers from 2 to 20.
+Uses a while loop to find and print the sum of all integers from 1 to 50.
+Instructions:
+
+Step 1: Setup (5 points)
+
+Ensure students have Kotlin installed on their development environment.
+Step 2: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., LoopsExample.kt) using their preferred code editor or IDE.
+Step 3: Write Kotlin Code (40 points)
+
+Students should write a Kotlin program that covers the following concepts:
+Use a for loop to iterate through even numbers from 2 to 20 (inclusive) and print them.
+Use a while loop to calculate and print the sum of all integers from 1 to 50.
+Step 4: Compile and Run (5 points)
+
+Guide students on how to compile and run their Kotlin program from the command line or within their IDE.
+Step 5: Testing (10 points)
+
+Encourage students to test their program and verify that it correctly prints even numbers and calculates the sum of integers.
+Step 6: Documentation (10 points)
+
+Ask students to include comments in their code to explain how the for loop and while loop are used in the program.
+Step 7: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., LoopsExample.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Correct implementation of the for loop to print even numbers.
+Accurate calculation and display of the sum using a while loop.
+Successful compilation and execution of the Kotlin program.
+Testing of the program to ensure correctness.
+Inclusion of comments to explain code segments.

@@ -1,0 +1,81 @@
+Hello World Android App
+
+Objective: To introduce students to Android app development using Kotlin.
+
+Task: In this assignment, students will create a basic Android app that displays a "Hello World" message on the screen. This assignment aims to familiarize students with the Android project structure, XML layout files, and writing Kotlin code to interact with UI components.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Ask students to set up a new Android project using Android Studio or another suitable development environment.
+Step 2: Create Layout (15 points)
+
+Instruct students to create an XML layout file (e.g., activity_main.xml) that includes a TextView element to display the "Hello World" message. Encourage them to experiment with layout attributes like text size, text color, and alignment.
+xml
+Copy code
+<!-- activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="24sp"
+        android:textColor="#000000" />
+
+</LinearLayout>
+Step 3: Kotlin Code (20 points)
+
+Students should write Kotlin code in the MainActivity.kt file to:
+Initialize the UI components from the layout file.
+Set the "Hello World" message to the TextView.
+Handle any additional logic they want to include.
+kotlin
+Copy code
+// MainActivity.kt
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Initialize UI components
+        val helloTextView = findViewById<TextView>(R.id.helloTextView)
+
+        // Set the "Hello World" message
+        helloTextView.text = "Hello World!"
+    }
+}
+Step 4: Run and Test (15 points)
+
+Instruct students to run the app on an emulator or a physical Android device and verify that the "Hello World" message is displayed correctly.
+Step 5: Documentation (10 points)
+
+Encourage students to provide brief documentation explaining the purpose of the app, how to run it, and any challenges they faced during development.
+Step 6: Submission (10 points)
+
+Students should submit their Android project, including XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful creation of an Android app that displays the "Hello World" message.
+
+Correct setup of the XML layout file.
+
+Proper Kotlin code to interact with UI components.
+
+Successful testing of the app on an emulator or device.
+
+Clear and concise documentation.

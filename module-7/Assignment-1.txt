@@ -1,0 +1,46 @@
+Enhanced To-Do List App
+
+Objective: To reinforce Android app development skills by building a more advanced to-do list app.
+
+Task: In this assignment, students will enhance their existing to-do list app (from a previous assignment) by adding several advanced features. These features include task categorization, due dates, priority levels, and the ability to set reminders. This assignment will reinforce concepts related to data persistence, UI/UX design, and user interactions.
+
+Instructions:
+
+Step 1: Project Enhancement (10 points)
+
+Instruct students to open their existing to-do list app project.
+Step 2: Task Categorization (20 points)
+
+Students should add the ability to categorize tasks. Tasks can belong to different categories (e.g., work, personal, shopping). Implement a feature that allows users to assign categories to their tasks.
+Step 3: Due Dates (20 points)
+
+Enhance the app to support due dates for tasks. Users should be able to specify a due date for each task, and the app should display tasks based on their due dates.
+Step 4: Priority Levels (20 points)
+
+Implement a priority system for tasks. Users should be able to assign priority levels (e.g., high, medium, low) to tasks. The app should allow sorting or filtering tasks based on their priority.
+Step 5: Task Reminders (30 points)
+
+Add the ability to set reminders for tasks. Users should be able to schedule notifications or alerts for specific tasks with due dates or priority levels.
+Step 6: UI Enhancements (20 points)
+
+Encourage students to improve the app's user interface (UI) to accommodate the new features. They should consider how to display task categories, due dates, priority levels, and reminders clearly and intuitively.
+Step 7: Testing and Bug Fixes (20 points)
+
+Ensure that students thoroughly test the enhanced app to identify and fix any bugs or issues. The app should work seamlessly with the new features.
+Step 8: Documentation (10 points)
+
+Request documentation that explains how to use the enhanced to-do list app, including instructions for task categorization, due dates, priority levels, and setting reminders.
+Step 9: Submission (10 points)
+
+Students should submit the enhanced Android project, including updated XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful addition of task categorization, due dates, priority levels, and task reminders to the to-do list app.
+
+Correct implementation of these features with no major bugs or issues.
+
+Improved user interface (UI) to accommodate the new features effectively.
+
+Thorough testing of the app to ensure the proper functioning of all enhanced features.
+
+Clear and concise documentation explaining how to use the enhanced app, including instructions for the new features.

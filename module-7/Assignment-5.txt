@@ -1,0 +1,56 @@
+RESTful API Client
+
+Objective: To challenge students with more advanced Android development tasks.
+
+Task: This assignment is optional and is designed for students who want to extend their skills. Students should build an Android app that interacts with a RESTful API using Retrofit and Kotlin. They can choose an API of their interest, such as a weather API, social media API, or any other public API. This assignment will involve making API requests, handling responses, and displaying data in the app.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to create a new Android app project for the RESTful API client application. They should use Kotlin as the programming language.
+Step 2: API Selection (20 points)
+
+Encourage students to choose a public RESTful API of their interest. Popular options include weather APIs, social media APIs, or any other API with available documentation.
+Step 3: Network Requests with Retrofit (40 points)
+
+Guide students in implementing network requests using the Retrofit library. They should create Retrofit service interfaces, define API endpoints, and handle API responses.
+Step 4: Data Model (20 points)
+
+Instruct students to define data models (Kotlin data classes) that represent the data they will receive from the API. Ensure proper mapping between JSON responses and Kotlin data classes.
+Step 5: User Interface (UI) Design (20 points)
+
+Encourage students to design a user-friendly interface for their app. They should consider how the data from the API will be displayed to the user.
+Step 6: Displaying API Data (30 points)
+
+Students should implement features to fetch data from the chosen API and display it within the app's user interface. They may choose to display data in lists, cards, or other appropriate UI components.
+Step 7: User Interaction (20 points)
+
+Enable users to interact with the displayed data. Depending on the API's functionality, students may implement features like searching, filtering, or favoriting items.
+Step 8: Error Handling (20 points)
+
+Ensure that the app gracefully handles API errors and network-related issues. Display appropriate error messages to users.
+Step 9: Testing and Bug Fixes (20 points)
+
+Thoroughly test the app, especially the network requests, API data handling, and UI display features. Address any bugs or issues that arise.
+Step 10: Documentation (10 points)
+
+Provide documentation that explains how to use the app, including instructions for interacting with the API data.
+Step 11: Presentation (10 points, Optional)
+
+For students who opt to present their optional assignment, they can give a brief presentation about their app, highlighting its features, functionality, and challenges overcome during development.
+Grading Criteria:
+
+Successful implementation of network requests using Retrofit to interact with the chosen RESTful API.
+
+Accurate definition of data models (Kotlin data classes) to represent API data.
+
+Functional display of API data in a user-friendly format within the app's user interface.
+
+Proper implementation of user interaction features that allow users to interact with the displayed data.
+
+Effective error handling for API errors and network-related issues.
+
+Thorough testing of features to ensure proper functionality.
+
+Clear and concise documentation explaining how to use the app, including instructions for interacting with the API data.

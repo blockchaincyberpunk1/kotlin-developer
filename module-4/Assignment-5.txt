@@ -1,0 +1,74 @@
+Working with Complex Data Structures in Kotlin
+
+Objective: To practice combining collections and lambdas for complex data processing.
+
+Task: In this assignment, students will work with data stored in JSON files representing a list of books and their associated authors. They will use Kotlin collections and lambdas to perform various operations on this data. The tasks are as follows:
+
+Step 1: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., BookProcessing.kt) for this assignment.
+Step 2: Read and Parse JSON Data (15 points)
+
+Provide students with two JSON files: one containing a list of books and another containing a list of authors. Instruct them to read and parse the JSON data into Kotlin data structures.
+kotlin
+Copy code
+data class Book(val title: String, val genre: String, val authorId: Int)
+data class Author(val id: Int, val name: String)
+
+val books: List<Book> = /* Read and parse books.json */
+val authors: List<Author> = /* Read and parse authors.json */
+Step 3: Organize Data (20 points)
+
+Students should use Kotlin collections and lambdas to organize the data. They should create a map where authors are associated with the books they've written.
+kotlin
+Copy code
+val authorBooksMap = authors.associate { author ->
+    author to books.filter { it.authorId == author.id }
+}
+Step 4: Genre-Based Search (20 points)
+
+Instruct students to use collections and lambdas to perform searches based on the genre of books. For example, they should find authors who have written books in a specific genre (e.g., "Mystery").
+kotlin
+Copy code
+val genre = "Mystery"
+val authorsInGenre = authors.filter { author ->
+    authorBooksMap[author]?.any { it.genre == genre } == true
+}
+Step 5: Average Books per Author (15 points)
+
+Students should calculate the average number of books per author.
+kotlin
+Copy code
+val averageBooksPerAuthor = books.size.toDouble() / authors.size
+Step 6: Identify Prolific Authors (15 points)
+
+Instruct students to use Kotlin collections to identify authors who have written more books than the average.
+kotlin
+Copy code
+val prolificAuthors = authors.filter { author ->
+    authorBooksMap[author]?.size ?: 0 > averageBooksPerAuthor
+}
+Step 7: Display Results (10 points)
+
+Students should display the results of their data processing, including the authors and books they've written in a specific genre, the average number of books per author, and the prolific authors.
+Step 8: Documentation (10 points)
+
+Encourage students to include comments in their code to explain each step of data processing and how they achieved the desired results.
+Step 9: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., BookProcessing.kt) along with the input JSON files and a brief description of their data processing steps and the results obtained.
+Grading Criteria:
+
+Correct reading and parsing of JSON data.
+
+Accurate organization of data into the author-books map.
+
+Correct identification of authors in a specific genre.
+
+Accurate calculation of the average number of books per author.
+
+Proper identification of prolific authors.
+
+Display of results.
+
+Inclusion of comments to explain code segments.

@@ -1,0 +1,52 @@
+Creating Classes and Objects in Kotlin
+
+Objective: To practice creating classes and objects in Kotlin.
+
+Task: Students should create a Kotlin program that simulates a simple library system. They should define the following classes:
+
+Book: Represents a book with properties like title, author, and ISBN.
+
+Library: Represents a library with properties like name and location. It should have methods to:
+
+Add books to its collection.
+Remove books from its collection.
+Display available books.
+Person: Represents a person with properties like name, age, and address.
+
+Instructions:
+
+Step 1: Setup (5 points)
+
+Ensure students have Kotlin installed on their development environment.
+Step 2: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., LibrarySystem.kt) using their preferred code editor or IDE.
+Step 3: Define Classes (40 points)
+
+Students should define the three classes (Book, Library, and Person) with their respective properties and methods.
+The Library class should have methods to add books, remove books, and display available books.
+Ensure that proper data types (e.g., strings, integers) are used for class properties.
+Step 4: Create Objects (10 points)
+
+Guide students on how to create objects of these classes in the main function.
+They should simulate library operations, such as adding books to the library, removing books, and displaying available books.
+Step 5: Compile and Run (5 points)
+
+Explain how to compile and run their Kotlin program from the command line or within their IDE.
+Step 6: Testing (10 points)
+
+Encourage students to test their program by adding, removing, and displaying books.
+Verify that the program behaves as expected and handles different scenarios.
+Step 7: Documentation (10 points)
+
+Ask students to include comments in their code to explain the purpose of each class and method, as well as how to use them.
+Step 8: Submission (15 points)
+
+Students should submit their Kotlin code file (e.g., LibrarySystem.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Correct definition of the Book, Library, and Person classes.
+Accurate implementation of methods in the Library class (add books, remove books, display available books).
+Proper instantiation and usage of objects in the main function.
+Thorough testing of the program, covering various library operations.
+Inclusion of comments to explain code segments.

@@ -1,0 +1,58 @@
+Building a News Reader App
+
+Objective: To explore integrating external data sources into Android apps.
+
+Task: In this assignment, students will create a news reader app that fetches news articles from a news API (e.g., NewsAPI) and presents them to users in a user-friendly format. This assignment will involve working with network requests, parsing JSON data, and presenting news articles with images and descriptions.
+
+Instructions:
+
+Step 1: Project Setup (10 points)
+
+Instruct students to create a new Android app project for the news reader application. They should use Kotlin as the programming language.
+Step 2: User Interface (UI) Design (20 points)
+
+Encourage students to design an attractive user interface for the news reader app. The UI should include a list of news articles, each displaying a headline, image, description, and source.
+Step 3: Network Requests (30 points)
+
+Guide students in implementing network requests to fetch news articles from a news API (e.g., NewsAPI). They should use libraries like Retrofit or the Android HttpURLConnection class for this purpose.
+Step 4: JSON Parsing (30 points)
+
+Instruct students to parse the JSON data received from the news API to extract relevant information such as article headlines, images, descriptions, and sources.
+Step 5: News Article Display (30 points)
+
+Students should display the retrieved news articles in a user-friendly format within the app. Each article should include a headline, image (if available), description, and source.
+Step 6: User Interaction (20 points)
+
+Enable users to click on a news article to view the full article content within the app. Implement a screen that displays the complete article when selected.
+Step 7: UI/UX Enhancements (20 points)
+
+Encourage students to improve the user interface (UI) and user experience (UX) of the app. Pay attention to the design and layout of the news article list and article detail screens.
+Step 8: Error Handling (20 points)
+
+Ensure that the app gracefully handles network errors, such as failed requests or lack of internet connectivity. Display appropriate error messages to users.
+Step 9: Testing and Bug Fixes (20 points)
+
+Thoroughly test the app, especially the network requests, JSON parsing, and article display features. Address any bugs or issues that arise.
+Step 10: Documentation (10 points)
+
+Provide documentation that explains how to use the news reader app, including instructions for viewing news articles and navigating the app.
+Step 11: Submission (10 points)
+
+Students should submit the completed Android project, including updated XML layout files, Kotlin code, and documentation.
+Grading Criteria:
+
+Successful implementation of network requests to fetch news articles from the chosen API.
+
+Accurate parsing of JSON data to extract relevant article information.
+
+Functional display of news articles in a user-friendly format with headlines, images (if available), descriptions, and sources.
+
+Proper implementation of user interaction to view full article content.
+
+Improved user interface (UI) and user experience (UX) with attention to design and layout.
+
+Effective error handling for network-related issues.
+
+Thorough testing of features to ensure proper functionality.
+
+Clear and concise documentation explaining how to use the news reader app, including instructions for viewing news articles and navigating the app.

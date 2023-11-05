@@ -1,0 +1,43 @@
+Conditional Statements in Kotlin
+
+Objective: To reinforce understanding of conditional statements in Kotlin.
+
+Task: Students should create a Kotlin program that:
+
+Prompts the user for their age.
+Uses an if-else statement to determine if the user is a minor (under 18), an adult (18 or older but under 65), or a senior (65 or older).
+Displays an appropriate message based on the user's age group.
+Instructions:
+
+Step 1: Setup (5 points)
+
+Ensure students have Kotlin installed on their development environment.
+Step 2: Create a Kotlin File (5 points)
+
+Instruct students to create a new Kotlin file (e.g., AgeClassifier.kt) using their preferred code editor or IDE.
+Step 3: Write Kotlin Code (30 points)
+
+Students should write a Kotlin program that covers the following concepts:
+Prompt the user to enter their age (hint: use the readLine() function to read user input as a string).
+Convert the user's input to an integer.
+Use an if-else statement to classify the user into one of the following age groups: minor, adult, or senior.
+Display an appropriate message based on the user's age group.
+Step 4: Compile and Run (5 points)
+
+Guide students on how to compile and run their Kotlin program from the command line or within their IDE.
+Step 5: Testing (10 points)
+
+Encourage students to test their program with different age values to ensure that the correct messages are displayed for each age group.
+Step 6: Documentation (10 points)
+
+Ask students to include comments in their code to explain how the program works and how the if-else statement is used for age classification.
+Step 7: Submission (10 points)
+
+Students should submit their Kotlin code file (e.g., AgeClassifier.kt) along with a brief description of how they implemented and tested the program.
+Grading Criteria:
+
+Correct implementation of user input and age classification.
+Accurate display of messages for different age groups.
+Successful compilation and execution of the Kotlin program.
+Testing of the program with various age values.
+Inclusion of comments to explain code segments.
